@@ -35,7 +35,7 @@ export default function Login() {
                     </header>
 
                     <div className="container">
-                        <h1>Que livros quer ler<br></br> hoje?</h1>
+                        <h1>Que livros quer ler<br /> hoje?</h1>
                         <p className='subtitle'>Entre na sua conta para continuar sua jornada pelo mundo das letras.</p>
 
                         <form onSubmit={handleSubmit}>
@@ -73,7 +73,9 @@ export default function Login() {
                                     <span>Lembrar acesso</span>
                                 </label>
 
-                                <a href="#esqueceu-senha">Esqueceu a senha?</a>
+                                <a href="#esqueceu-senha">
+                                    Esqueceu a senha?
+                                </a>
                             </div>
 
                             <div className="button-group">
@@ -95,9 +97,21 @@ export default function Login() {
                 <img src={Backgroundicon} alt="" className="icon" />
             </div>
 
-            <PopUp 
-                isOpen={isPopUpOpen} 
-                onClose={() => setIsPopUpOpen(false)} 
+            <PopUp
+                isOpen={isPopUpOpen}
+                onClose={() => setIsPopUpOpen(false)}
+                firstText='"O jardim floresceu para você."'
+                title="Conexão Estabelecida!"
+                secondText="Seu portal literário está pronto. Suas histórias favoritas, marcas de página e sonhos estão exatamente onde você os deixou."
+                lastText="PREPARE-SE PARA A LEITURA"
+            />
+
+            <PopUp
+                firstText='“O portal ainda espera por você.”'
+                title="E-mail ou senha incorretos"
+                secondText="Não foi possível entrar com esses dados. Confira seu e-mail e sua senha e tente novamente. Estamos aqui para acolher você."
+                tryAgain={"Tente Novamente"}
+
             />
         </main>
     )
