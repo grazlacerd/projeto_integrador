@@ -165,11 +165,11 @@ export default function Home() {
               </button>
 
               <ProfileNavbar
-                name="Harley Quinzel"
-                username="@harleyquinzel"
-                email="harley.quinzel@email.com"
+                name="Grazielly Lacerda"
+                username="@grazlacerd"
+                email="grazl@email.com"
                 vestibular="FUVEST / ENEM"
-                initials="HQ"
+                initials="GL"
                 iconSeta={IconSetabaixo}
               />
             </div>
